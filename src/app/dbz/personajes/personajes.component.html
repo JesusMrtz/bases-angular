@@ -1,0 +1,7 @@
+<ul *ngIf="characters.length; else noCharacters">
+  <h2>Personajes</h2>
+  <li *ngFor="let character of characters">{{character.name}} - {{character.power | number}}</li>
+</ul>
+<ng-template #noCharacters>
+  <h2 class="text-center">No contienes personajes</h2>
+</ng-template>

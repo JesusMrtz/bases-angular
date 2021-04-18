@@ -1,0 +1,8 @@
+<h2 class="text-center">La base es <strong>{{ base }}</strong></h2>
+<div>
+  <p class="text-center text-xl">{{ counter }}</p>
+  <footer class="text-center">
+    <button (click)="decrementCounter()" [disabled]="!counter">-{{ base }}</button>
+    <button (click)="incrementCounter()">+{{ base }}</button>
+  </footer>
+</div>
